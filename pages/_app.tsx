@@ -1,7 +1,6 @@
-import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useState } from 'react';
-import { RecoilRoot } from 'recoil'
+import { RecoilRoot } from 'recoil';
 import {
   Hydrate,
   QueryClient,
