@@ -8,9 +8,13 @@ const inter = Inter({ subsets: ['latin'] })
 const MainWrapper = styled.main`
   width: 100vw;
   height: 100vh;
-`;
+`
 
 export default function Home() {
+  const test = () => {
+    return "3"
+  }
+
   return (
     <>
       <Head>
@@ -19,9 +23,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MainWrapper>
-        
-      </MainWrapper>
+      <MainWrapper></MainWrapper>
     </>
   )
 }
