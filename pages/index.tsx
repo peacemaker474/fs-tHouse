@@ -12,7 +12,7 @@ const MainWrapper = styled.main`
 
 export default function Home() {
   const test = () => {
-    return "3"
+    return "3";
   }
 
   return (
