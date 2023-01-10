@@ -1,14 +1,10 @@
 import type { AppProps } from 'next/app'
-import { useState } from 'react';
-import { RecoilRoot } from 'recoil';
-import {
-  Hydrate,
-  QueryClient,
-  QueryClientProvider,
-} from '@tanstack/react-query';
+import { useState } from 'react'
+import { RecoilRoot } from 'recoil'
+import { Hydrate, QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [queryClient] = useState(() => new QueryClient());
+  const [queryClient] = useState(() => new QueryClient())
 
   return (
     <QueryClientProvider client={queryClient}>
