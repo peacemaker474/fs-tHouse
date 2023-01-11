@@ -1,14 +1,10 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled'
 
-function GNB () {
-  return (
-    <GNBWrapper>
-
-    </GNBWrapper>
-  );
+function GNB() {
+  return <GNBWrapper />
 }
 
-export default GNB;
+export default GNB
 
 const GNBWrapper = styled.header`
   max-width: 1265px;
@@ -16,4 +12,4 @@ const GNBWrapper = styled.header`
   height: 81px;
   margin: 0 auto;
   background-color: blue;
-`;
+`

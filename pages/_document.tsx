@@ -1,6 +1,6 @@
-import { Html, Head, Main, NextScript } from 'next/document';
-import { css, Global } from '@emotion/react';
-import Header from '../components/gnb/templates/Header';
+import { Html, Head, Main, NextScript } from 'next/document'
+import { css, Global } from '@emotion/react'
+import Header from '../components/gnb/templates/Header'
 
 export default function Document() {
   return (
