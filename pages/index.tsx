@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import styled from '@emotion/styled'
+import Head from 'next/head';
+import styled from '@emotion/styled';
 // import { Inter } from '@next/font/google' // 사용할 때 주석 해제
 
 // const inter = Inter({ subsets: ['latin'] })
@@ -7,11 +7,11 @@ import styled from '@emotion/styled'
 const MainWrapper = styled.main`
   width: 100vw;
   height: 100vh;
-`
+`;
 
 export default function Home() {
-  const test = () => '3'
-  test()
+  const test = () => '3';
+  test();
 
   return (
     <>
@@ -23,5 +23,5 @@ export default function Home() {
       </Head>
       <MainWrapper />
     </>
-  )
+  );
 }
