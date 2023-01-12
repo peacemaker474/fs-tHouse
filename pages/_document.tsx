@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import { css, Global } from '@emotion/react'
+import Header from '../components/gnb/templates/Header'
 
 export default function Document() {
   return (
@@ -138,6 +139,7 @@ export default function Document() {
         `}
       />
       <body>
+        <Header />
         <Main />
         <NextScript />
       </body>
