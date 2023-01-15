@@ -31,6 +31,8 @@ module.exports = {
         'd.ts': 'never',
       },
     ],
+    'linebreak-style': 0, // 줄바꿈과 관련된 설정
+    'jsx-quotes': [2, 'prefer-single'], // JSX 안에서도 모두 Single Quote 사용
   },
   settings: {
     'import/resolver': {
