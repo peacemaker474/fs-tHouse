@@ -15,4 +15,9 @@ function MainLogo() {
 
 export default MainLogo;
 
-const MainLogoWrapper = styled.div``;
+const MainLogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-right: 35px;
+`;
