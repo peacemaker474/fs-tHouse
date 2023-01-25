@@ -1,10 +1,12 @@
 import styled from '@emotion/styled';
 import MainLogo from '../atoms/MainLogo';
+import MainMenu from '../molecules/MainMenu';
 
 function GNB() {
   return (
     <GNBWrapper>
       <MainLogo />
+      <MainMenu />
     </GNBWrapper>
   );
 }
