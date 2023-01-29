@@ -33,6 +33,7 @@ module.exports = {
     ],
     'linebreak-style': 0, // 줄바꿈과 관련된 설정
     'jsx-quotes': [2, 'prefer-single'], // JSX 안에서도 모두 Single Quote 사용
+    'object-curly-newline': 0, // import를 3개 이상할 경우, 줄바꿈을 해야 하는데 그것을 무시하는 규칙
   },
   settings: {
     'import/resolver': {
@@ -41,4 +42,4 @@ module.exports = {
       },
     },
   },
-}
+};
