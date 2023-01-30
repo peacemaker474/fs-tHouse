@@ -1,17 +1,29 @@
 import styled from '@emotion/styled';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 function MainMenu() {
+  const router = useRouter();
+
   return (
     <MenuLists>
       <MenuList>
-        <MainLink href="/"> 커뮤니티 </MainLink>
+        <MainLink href="/" current={router.pathname === '/'}>
+          {' '}
+          커뮤니티{' '}
+        </MainLink>
       </MenuList>
       <MenuList>
-        <MainLink href="/store"> 쇼핑 </MainLink>
+        <MainLink href="/store" current={router.pathname === '/store'}>
+          {' '}
+          쇼핑{' '}
+        </MainLink>
       </MenuList>
       <MenuList>
-        <MainLink href="/expets"> 이사/시공/수리 </MainLink>
+        <MainLink href="/expets" current={router.pathname === '/expets'}>
+          {' '}
+          이사/시공/수리{' '}
+        </MainLink>
       </MenuList>
     </MenuLists>
   );
@@ -34,8 +46,8 @@ const MenuList = styled.li`
   font-size: 18px;
 `;
 
-const MainLink = styled(Link)`
-  color: black;
+const MainLink = styled(Link)<{ current: boolean }>`
+  color: ${({ current }) => (current ? '#35c5f0' : '#000')};
 
   &:hover {
     color: #35c5f0;
