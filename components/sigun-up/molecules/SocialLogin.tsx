@@ -11,7 +11,7 @@ function SocialLogin() {
       <SubTitle>SNS계정으로 간편하게 회원가입</SubTitle>
       <SocialLogoWrapper>
         <SocialLogo link="facebookRedirect" imageURL={FacebookLogo} alt="페이스북으로 로그인" />
-        <SocialLogo link="KakaotalkRedirect" imageURL={KakaoLogo} alt="카카오톡으로 로그인" />
+        <SocialLogo link="kakaotalkRedirect" imageURL={KakaoLogo} alt="카카오톡으로 로그인" />
         <SocialLogo link="naverRedirect" imageURL={NaverLogo} alt="네이버로 로그인" />
       </SocialLogoWrapper>
     </SocialLoginWrapper>
