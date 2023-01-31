@@ -1,4 +1,4 @@
-import SignUp from '../components/sigun-up/organisms/SignUp';
+import SignUp from '../../components/sigun-up/organisms/SignUp';
 
 function signUp() {
   return <SignUp />;
