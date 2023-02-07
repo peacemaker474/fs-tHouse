@@ -35,6 +35,7 @@ module.exports = {
     // 'jsx-quotes': [2, 'prefer-single'], // JSX 안에서도 모두 Single Quote 사용
     'object-curly-newline': 0, // import를 3개 이상할 경우, 줄바꿈을 해야 하는데 그것을 무시하는 규칙
     'react/button-has-type': 'off', // button type 강제 off
+    'jsx-quotes': ['error', 'prefer-single'], // JSX 내에 모든 것을 Signle-Quote로 사용
   },
   settings: {
     'import/resolver': {

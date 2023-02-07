@@ -1,12 +1,18 @@
 import styled from '@emotion/styled';
+import Cart from '../../common/Cart';
 import MainLogo from '../atoms/MainLogo';
 import MainMenu from '../molecules/MainMenu';
+import SearchForm from '../molecules/SearchForm';
+import SignLists from '../molecules/SignLists';
 
 function GNB() {
   return (
     <GNBWrapper>
       <MainLogo />
       <MainMenu />
+      <SearchForm />
+      <Cart />
+      <SignLists />
     </GNBWrapper>
   );
 }
