@@ -1,11 +1,11 @@
-import { inputTypes } from '../../../type/common';
-
 interface InputProps {
-  inputType: inputTypes;
+  type: string;
+  placeholder: string;
+  id: string;
 }
 
-function Input({ inputType }: InputProps) {
-  return <input type={inputType} />;
+function Input({ type, placeholder, id }: InputProps) {
+  return <input type={type} placeholder={placeholder} id={id} />;
 }
 
 export default Input;

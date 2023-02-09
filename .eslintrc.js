@@ -14,7 +14,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    'prettier/prettier': 0,
+    'prettier/prettier': 'off',
     'react/react-in-jsx-scope': 'off', // import React 생략
     'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }], // ts, tsx 파일에서도 jsx를 쓰기 위해
     'react/jsx-props-no-spreading': ['warn'], // props로 받은 것 바로 props로 넘기기 허용
@@ -31,11 +31,11 @@ module.exports = {
         'd.ts': 'never',
       },
     ],
-    'linebreak-style': 0, // 줄바꿈과 관련된 설정
-    // 'jsx-quotes': [2, 'prefer-single'], // JSX 안에서도 모두 Single Quote 사용
-    'object-curly-newline': 0, // import를 3개 이상할 경우, 줄바꿈을 해야 하는데 그것을 무시하는 규칙
+    'linebreak-style': 'off', // 줄바꿈과 관련된 설정
+    'object-curly-newline': 'off', // import를 3개 이상할 경우, 줄바꿈을 해야 하는데 그것을 무시하는 규칙
     'react/button-has-type': 'off', // button type 강제 off
-    'jsx-quotes': ['error', 'prefer-single'], // JSX 내에 모든 것을 Signle-Quote로 사용
+    'jsx-a11y/label-has-associated-control': 'off', // label과 id를 강제 off
+    'react/require-default-props': 'off',
   },
   settings: {
     'import/resolver': {

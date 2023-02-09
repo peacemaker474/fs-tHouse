@@ -1,12 +1,13 @@
+import { PropsWithChildren } from 'react';
 import { buttonTypes } from '../../../type/common';
 
 interface Button {
-  buttonType: buttonTypes;
-  text: string;
+  type: buttonTypes;
+  children: PropsWithChildren<string>;
 }
 
-function Button2({ buttonType, text }: Button) {
-  return <button type={buttonType}>{text}</button>;
+function SubmitButton({ type, children }: Button) {
+  return <button type={type}>{children}</button>;
 }
 
-export default Button2;
+export default SubmitButton;
