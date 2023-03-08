@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Input from '../atoms/Input';
 import SubmitButton from '../atoms/Button';
-import Select from '../atoms/Select';
-import Option from '../atoms/Option';
 
 const emailList = [
   {
@@ -49,6 +47,9 @@ function Email() {
   const [manualEmail, setManualEmail] = useState<boolean>(false);
 
   const handleSelectBox = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    if (event.target.value === 'manual') {
+      setManualEmail(true);
+    }
     setSelectedEamil(event.target.value);
   };
 
@@ -65,14 +66,13 @@ function Email() {
       <Input type="text" placeholder="이메일" id="email" />
       <span>@</span>
       {!manualEmail && (
-        <Select name="email" id="email" onChange={handleSelectBox}>
-          <Option value="">선택해주세요</Option>
+        <select onChange={handleSelectBox}>
           {emailList?.map((email) => (
-            <Option key={email.value} value={email.value}>
+            <option key={email.value} value={email.value}>
               {email.address}
-            </Option>
+            </option>
           ))}
-        </Select>
+        </select>
       )}
       {manualEmail && (
         <>
